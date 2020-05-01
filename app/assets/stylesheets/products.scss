@@ -51,6 +51,18 @@ main section.categories-show {
         font-size: 0.8em;
       }
 
+      .sold-out-span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px;
+        background-color: rgba(255, 31, 31, 0.774);
+        border-radius: 4px 0 20px 0;
+        color: rgba(0, 0, 0, 0.795);
+        font-size: 1em;
+        font-weight: bold;
+      }
+
       &:hover {
 
         border-color: #999;
@@ -72,5 +84,3 @@ main section.products-show {
     }
   }
 }
-
-
