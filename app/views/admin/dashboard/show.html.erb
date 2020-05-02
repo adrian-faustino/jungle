@@ -1,2 +1,14 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<div class="jumbotron">
+  <h1 class="display-4">Dashboard</h1>
+
+  <p class="lead">General store statistics</p>
+
+  <hr class="my-4">
+  <p>Unique products in store: 
+    <a class="text-primary" href="admin/products"><%= @products_in_db %></a>
+  </p>
+  <p>Unique categories in store: 
+    <a class="text-primary" href="categories/products"><%= @categories_in_db %></a>
+  </p>
+  
+</div>
