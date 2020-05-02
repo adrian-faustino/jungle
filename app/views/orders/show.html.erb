@@ -8,6 +8,45 @@
     <h4>Thank you for your order!</h4>
   </div>
 
+  <% #Ordered items displayed to user %>
+  <% puts @order.inspect %>
+
+  <div class="panel panel-default items">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th colspan="2">Product</th>
+        <th>Description</th>
+        <th>Quantity</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @products.each do |      product|%>
+        <%= render :partial => 'line_item', locals: {product: product, items: @items, order: @order}%>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Order Date</th>
+      <th>Total</th>
+      <th>E-mail</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= @order.created_at.strftime("%Y-%m-%d") %></td>
+      <td><%= humanized_money_with_symbol @order.total_cents / 100.0 %></td>
+      <td><%= @order.email %></td>
+    </tr>
+  </tbody>
+</table>
+
+
   <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>
 
 </section>
