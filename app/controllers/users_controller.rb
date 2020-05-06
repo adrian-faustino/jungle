@@ -4,6 +4,13 @@ class UsersController < ApplicationController
   
   def create
     user = User.new(user_params)
+
+    @existing = User.where(email: params.require(:user)[:email]);
+
+    if @existing.length > 0
+      return;
+    end
+
     if user.save
       session[:user_id] = user.id
       redirect_to '/'
