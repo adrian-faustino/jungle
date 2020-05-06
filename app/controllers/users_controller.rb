@@ -7,7 +7,11 @@ class UsersController < ApplicationController
 
     @existing = User.where(email: params.require(:user)[:email]);
 
+    puts params.require(:user)
+
     if @existing.length > 0
+      return;
+    elsif params.require(:user)[:password] != params.require(:user)[:password_confirmation]
       return;
     end
 
