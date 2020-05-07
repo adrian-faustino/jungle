@@ -25,3 +25,9 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
 * PostgreSQL 9.x
 * Stripe
+
+## Features
+!["User Authentication"](https://github.com/adrian-faustino/jungle/blob/master/docs/user_auth.gif?raw=true)
+!["Users are warned of sold out products."](https://github.com/adrian-faustino/jungle/blob/master/docs/sold_out.png?raw=true)
+!["Cart System"](https://github.com/adrian-faustino/jungle/blob/master/docs/empty_cart.gif?raw=true)
+!["Using Stripe for transactions."](https://github.com/adrian-faustino/jungle/blob/master/docs/making_order.gif?raw=true)
