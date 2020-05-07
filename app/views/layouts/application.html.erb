@@ -8,11 +8,13 @@
 </head>
 <body>
 
-  <% if current_user %>
+  <div style="margin-left: 45px;" class="alert" role="alert">
+    <% if current_user %>
     Signed in as <%= current_user.first_name.to_s + ' ' + current_user.last_name.to_s %> | <%= link_to "Logout", '/logout' %>
-  <% else %>
+    <% else %>
     <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
-  <% end %>
+    <% end %>
+  </div>
 
   <%= render 'layouts/top_nav' %>
 
