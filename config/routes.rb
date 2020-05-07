@@ -33,6 +33,9 @@ Rails.application.routes.draw do
   get '/signup' => 'users#new'
   post '/users' => 'users#create'
 
+  # Invalid login
+  get '/login/error' => 'users#error'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

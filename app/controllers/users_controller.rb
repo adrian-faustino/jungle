@@ -7,8 +7,6 @@ class UsersController < ApplicationController
 
     @existing = User.where(email: params.require(:user)[:email]);
 
-    puts params.require(:user)
-
     if @existing.length > 0
       return;
     elsif params.require(:user)[:password] != params.require(:user)[:password_confirmation]
@@ -21,6 +19,10 @@ class UsersController < ApplicationController
     else
       redirect_to '/signup'
     end
+  end
+
+  def error
+    render 'create'
   end
 
   private
