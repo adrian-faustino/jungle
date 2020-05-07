@@ -28,14 +28,14 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 
 ## Features
 
-###### User Authentication
+### User Authentication
 !["User Authentication"](https://github.com/adrian-faustino/jungle/blob/master/docs/user_auth.gif?raw=true)
 
-###### Sold out product indicator
+### Sold out product indicator
 !["Users are warned of sold out products."](https://github.com/adrian-faustino/jungle/blob/master/docs/sold_out.png?raw=true)
 
-###### Cart System
+### Cart System
 !["Cart System"](https://github.com/adrian-faustino/jungle/blob/master/docs/empty_cart.gif?raw=true)
 
-###### Using Stripe for transactions
+### Using Stripe for transactions
 !["Using Stripe for transactions."](https://github.com/adrian-faustino/jungle/blob/master/docs/making_order.gif?raw=true)
